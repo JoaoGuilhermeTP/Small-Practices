@@ -4,20 +4,21 @@ public class Main {
   
   public static void main(String[] args) {
 
-    ArrayList<Retangulo>
-    lista = new ArrayList<Retangulo>();
+    // Create an arraylist object to store objects of the type "Rectangle"
+    ArrayList<Rectangle> lista = new ArrayList<Rectangle>();
     
-    lista.add(new Retangulo(10.5f, 20f));
-    lista.add(new Retangulo());
-    lista.add(new Retangulo(5f, 15f, new Ponto(5f, 2f)));
-    lista.add(new Retangulo(new Ponto(5f, 2f)));
+    // Add four new Rectangle objects into arraylist object
+    lista.add(new Rectangle(10.5f, 20f));
+    lista.add(new Rectangle());
+    lista.add(new Rectangle(5f, 15f, new Point(5f, 2f)));
+    lista.add(new Rectangle(new Point(5f, 2f)));
 
+    // Print the area of each Rectangle
     for (int i = 0; i < lista.size(); i++) {
-      System.out.println(lista.get(i).calcularArea());
+      System.out.println("The area of the rectangle at index " + i + " is: " + lista.get(i).calcularArea());
     }
 
-    // Os retângulos de intex 2 e 3 no ArrayList tem o mesmo ponto
-    // A linha abaixo retornará true
+    // Rectangles at index 2 and 3 share the same point, therefore they intersect each other
     System.out.println(lista.get(2).temInterseccao(lista.get(3)));
   }
 }

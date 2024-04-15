@@ -1,13 +1,13 @@
-public class Ponto {
+public class Point {
   private float x;
   private float y;
 
-  public Ponto() {
+  public Point() {
     this.x = 0;
     this.y = 0;
   }
 
-  public Ponto(float x, float y) {
+  public Point(float x, float y) {
     this.x = x;
     this.y = y;
   }
