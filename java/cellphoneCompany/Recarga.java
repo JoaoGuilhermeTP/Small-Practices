@@ -1,4 +1,5 @@
 import java.util.GregorianCalendar;
+import java.text.SimpleDateFormat;
 
 public class Recarga {
     private GregorianCalendar data;
@@ -21,7 +22,7 @@ public class Recarga {
     public String toString() {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyy");
         return String.format(
-            "Data: %s\Valor: R$ %f", sdf.format(data.getTime()), valor
+            "Data: %s\nValor: R$ %f", sdf.format(data.getTime()), valor
         );
     }
 }

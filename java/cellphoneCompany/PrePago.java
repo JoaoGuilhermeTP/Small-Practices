@@ -56,11 +56,11 @@ public class PrePago extends Assinante {
             Recarga recarga = recargas[i];
             if (recarga.getData().get(GregorianCalendar.MONTH) == mes) {
                 System.out.println(recarga);
-                totalRecargas += regarga.getValor();
+                totalRecargas += recarga.getValor();
             }
         }
 
-        System.out.println(String.format("Total de chamadas: R$ %f", totalChmadas));
+        System.out.println(String.format("Total de chamadas: R$ %f", totalChamadas));
         System.out.println(String.format("Total de recargas: R$ %f", totalRecargas));
         System.out.println(String.format("Créditos: %f", creditos));
     }

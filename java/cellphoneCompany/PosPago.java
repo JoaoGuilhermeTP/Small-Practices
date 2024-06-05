@@ -9,7 +9,7 @@ public class PosPago extends Assinante {
     }
 
     public void fazerChamada(GregorianCalendar data, int duracao) {
-        if (numChamadas > chmadas.length) {
+        if (numChamadas > chamadas.length) {
             System.out.println("Número de chamadas excedido");
         } 
         else {
@@ -26,7 +26,7 @@ public class PosPago extends Assinante {
             Chamada chamada = chamadas[i];
             if (chamada.getData().get(GregorianCalendar.MONTH) == mes) {
                 System.out.println(chamada);
-                totalChamada = chamada.getDuracao() * 1.04f;
+                totalChamadas = chamada.getDuracao() * 1.04f;
             }
         }
 

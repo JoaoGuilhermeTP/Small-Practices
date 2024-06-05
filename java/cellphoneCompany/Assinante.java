@@ -1,5 +1,3 @@
-import java.util.GregorinCalendar;
-
 public abstract class Assinante {
     protected long cpf;
     protected String nome;
@@ -11,7 +9,7 @@ public abstract class Assinante {
         this.cpf = cpf;
         this.nome = nome;
         this.numero = numero;
-        this.chamadas = new Chamada[100]
+        this.chamadas = new Chamada[100];
         this.numChamadas = 0;
     }
 
@@ -20,7 +18,7 @@ public abstract class Assinante {
     }
 
     @Override
-    public toString() {
+    public String toString() {
         return String.format("CPF: %d\nNome: %s\nNúmero: %s", cpf, nome,numero);
     }
 }
